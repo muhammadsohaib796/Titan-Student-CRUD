@@ -6,3 +6,4 @@ class Todo(Base):
     id = Column(Integer, primary_key = True, index=True)
     title = Column(String(50), nullable=False)
     description = Column(String(250),nullable=True)
+    
