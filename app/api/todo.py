@@ -31,9 +31,11 @@ def get(todo_id:int, db:Session =Depends(get_db)):
 
 @router.put('/{todo_id}')
 def update(todo_id:int, todo:TodoCreate, db:Session = Depends(get_db)):
-    updated = update(db,todo_id,todo)
+    updated = update_todo(db,todo_id,todo)
     if not updated:
         raise HTTPException(
             status_code=404,
             detail= "Todo Not Found"
         )
+    
+    return updated
