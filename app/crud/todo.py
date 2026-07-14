@@ -2,6 +2,7 @@ from sqlalchemy.orm import Session
 from app.models.todo import Todo
 from app.schemas.todo import TodoCreate,TodoResponse 
 
+
 def create_todo(db:Session,todo:TodoCreate):
     db_todo = Todo(
         title = todo.title,
