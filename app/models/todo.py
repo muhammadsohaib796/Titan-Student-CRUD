@@ -3,6 +3,6 @@ from app.core.database import Base
 
 class Todo(Base):
     __tablename__ = "todos"
-    id = Column(Integer, Primary_key = True, Index=False)
-    title = Column(String, nullable=False)
-    description = Column(String, nullable=True)
+    id = Column(Integer, primary_key = True, index=True)
+    title = Column(String(50), nullable=False)
+    description = Column(String(250),nullable=True)
