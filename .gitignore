@@ -1,5 +1,5 @@
 .crud_env/
-.env
+.env/
 alembic/__pycache__/
 app/core/__pycache__/
 app/models/__pycache__/
