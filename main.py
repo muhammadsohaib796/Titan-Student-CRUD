@@ -7,6 +7,6 @@ app.include_router(todo_router)
 
 @app.get('/')
 def home():
-    return{
-        "messaage":"Hello"
-    }
+        return{
+                "message":"Hello"
+        }
